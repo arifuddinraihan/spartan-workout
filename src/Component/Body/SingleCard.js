@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDumbbell , faTimeline} from '@fortawesome/free-solid-svg-icons'
+import { faTimeline} from '@fortawesome/free-solid-svg-icons'
 
 const SingleCard = () => {
     return (
