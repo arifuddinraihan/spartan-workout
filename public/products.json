@@ -1,0 +1,50 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Running",
+    "details": "",
+    "forAge": "22-25",
+    "timeNeed": 5,
+    "img": "https://images.unsplash.com/photo-1594882645126-14020914d58d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1485&q=80"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-t74d-a77b362d6ead",
+    "name": "Swimming",
+    "details": "",
+    "forAge": "22-25",
+    "timeNeed": 5,
+    "img": "https://images.unsplash.com/photo-1438029071396-1e831a7fa6d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2050&q=80"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a67b362d6ead",
+    "name": "Yoga",
+    "details": "",
+    "forAge": "22-25",
+    "timeNeed": 10,
+    "img": "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a67b362bhead",
+    "name": "Push Up",
+    "details": "",
+    "forAge": "20-25",
+    "timeNeed": 3,
+    "img": "https://images.unsplash.com/photo-1619987767073-fffdaa776ce8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a67b362xvead",
+    "name": "Weight Lifting",
+    "details": "",
+    "forAge": "22-25",
+    "timeNeed": 4,
+    "img": "https://images.unsplash.com/photo-1582910184841-2135ce4421bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a67sdf62d6ad",
+    "name": "Boxing",
+    "details": "",
+    "forAge": "20-25",
+    "timeNeed": 10,
+    "img": "https://images.unsplash.com/photo-1593352216894-89108a0d2653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+  } 
+]

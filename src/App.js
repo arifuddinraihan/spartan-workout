@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="">
       <Navbar></Navbar>
+      <div className='container mx-auto my-4 md:my-8'>
       <Body></Body>
+      </div>
       <Questions></Questions>
       <Footer></Footer>
     </div>
