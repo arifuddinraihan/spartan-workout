@@ -6,26 +6,26 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 const Tracker = () => {
     return (
-        <div className='fixed'>
-            <div className="card w-1/10 bg-base-100 shadow-xl mr-2">
+        <div className='sticky top-20'>
+            <div className="card w-3/10 bg-base-100 shadow-xl mr-2">
                 <User></User>
                 <div className="px-2 mt-0 relative">
                     <h2 className="text-sm lg:text-xl">Add A Break</h2>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-1 bg-slate-200 rounded-lg p-4'>
-                        <button className="btn btn-xs text-sm">10<small className='text-xs'>s</small></button>
-                        <button className="btn btn-xs text-sm">20<small className='text-xs'>s</small></button>
-                        <button className="btn btn-xs text-sm">30<small className='text-xs'>s</small></button>
-                        <button className="btn btn-xs text-sm">40<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm block">10<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm block">20<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm block">30<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm block">40<small className='text-xs'>s</small></button>
                     </div>
                     <h2 className="text-sm lg:text-xl mt-2">Exercies Details</h2>
                     <div className='mt-3 mb-4'>
                         <div className='flex justify-between bg-slate-200 p-3 rounded-lg mb-2'>
-                            <p className='block'>Work time</p>
-                            <p className='block'>200 <small>Min</small></p>
+                            <p className='block text-sm md:text-lg'>Work time</p>
+                            <p className='block text-sm md:text-lg'>200 <small className='text-xs md:text-sm lg:text-lg'>Min</small></p>
                         </div>
                         <div className='flex justify-between bg-slate-200 p-3 rounded-lg'>
-                            <p className='block'>Break time</p>
-                            <p className='block'>20 <small>Min</small></p>
+                            <p className='block text-sm md:text-lg'>Break time</p>
+                            <p className='block text-sm md:text-lg'>20 <small className='text-xs md:text-sm lg:text-lg'>Min</small></p>
                         </div>
                     </div>
                     <div className="mt-16 card-actions justify-center">
