@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimeline} from '@fortawesome/free-solid-svg-icons'
 
 const SingleCard = ({activity, setTask}) => {
-    const { name, forAge, timeNeed, details, img} = activity
+    const { name, forAge, timeNeed, img} = activity
     // console.log(activity.id)
     return (
         <div className="card w-1/10 bg-base-100 shadow-xl">
-            <figure><img className='w-full h-auto' src={img} alt="/" /></figure>
+            <figure><img className='w-full h-auto' src={img} alt={name} /></figure>
             <div className="card-body relative px-1 lg:px-3">
                 <h2 className="card-title text-lg md:text-xl lg:text-2xl">{name}</h2>
                 <p><strong className='text-sm md:text-lg lg:text-xl'>For Age : {forAge}</strong></p>

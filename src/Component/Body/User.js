@@ -11,7 +11,7 @@ const User = () => {
             <div className='text-center flex flex-col md:flex-row justify-around md:justify-evenly items-center'>
                 <div className="avatar ml-2 lg:ml-0">
                     <div className="w-20 rounded-full">
-                        <img src="https://placeimg.com/192/192/people" />
+                        <img src="https://placeimg.com/192/192/people" alt='Ms_Tasmia'/>
                     </div>
                 </div>
                 <div className='mt-2 md:mt-1 lg:mt-0'>

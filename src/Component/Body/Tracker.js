@@ -11,7 +11,7 @@ const Tracker = () => {
                 <User></User>
                 <div className="px-2 mt-0 relative">
                     <h2 className="text-sm lg:text-xl">Add A Break</h2>
-                    <div className='grid grid-cols-4 gap-1 bg-slate-200 rounded-lg p-4'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-1 bg-slate-200 rounded-lg p-4'>
                         <button className="btn btn-xs text-sm">10<small className='text-xs'>s</small></button>
                         <button className="btn btn-xs text-sm">20<small className='text-xs'>s</small></button>
                         <button className="btn btn-xs text-sm">30<small className='text-xs'>s</small></button>
