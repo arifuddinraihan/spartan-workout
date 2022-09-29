@@ -7,7 +7,7 @@ const Breakbtn = (props) => {
     const { time } = breakButton;
     return (
         <button
-            onClick={() => breakBtnFunction(time)}
+            onClick={() => breakBtnFunction(breakButton)}
             className="btn btn-xs text-sm block">{time}
         </button>
 

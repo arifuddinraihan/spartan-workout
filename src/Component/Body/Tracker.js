@@ -24,8 +24,28 @@ const Tracker = ({ workOut }) => {
     // Event listener for break buttons to set data into Tracker
     let newBreak = 0;
     const breakBtnFunction = (breakButton) => {
-        newBreak = breakButton;
+        const { time, id } = breakButton
+        newBreak = time;
         setNewBreakTime(newBreak)
+
+        // Local Storage data stored and showed
+        const info = {
+            time, 
+            id,
+            button : "true"
+        }
+        const breakInfo = localStorage.getItem("breakInfo")
+        const oldBreakInfo = JSON.parse(breakInfo)
+        if(oldBreakInfo){
+            const isExists = oldBreakInfo.find((b)=>b.id === id);
+            if(isExists){
+                return
+            } else {
+                localStorage.setItem("breakInfo", JSON.stringify([...oldBreakInfo,info]))
+            }
+        } else {
+            localStorage.setItem("breakInfo", JSON.stringify([info]))
+        }
     }
 
     // Total Exercise time added
@@ -43,7 +63,7 @@ const Tracker = ({ workOut }) => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            });
+        });
     };
 
     return (
@@ -73,7 +93,7 @@ const Tracker = ({ workOut }) => {
                         </div>
                     </div>
                     <div className="mt-16 card-actions justify-center">
-                        <button onClick={()=>notify()}
+                        <button onClick={() => notify()}
                             className="btn btn-block rounded btn-success absolute bottom-0 text-white">
                             <div className='flex gap-2 justify-center items-center'>
                                 <FontAwesomeIcon icon={faCircleCheck} />
