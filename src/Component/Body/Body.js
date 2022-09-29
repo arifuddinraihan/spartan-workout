@@ -3,15 +3,18 @@ import './Body.css'
 import Cards from './Cards';
 import Tracker from './Tracker';
 const Body = () => {
+    // task use state declare for storing the data
     const [task, setTask] = useState([])
     const [ workOut , setWorkOut ] = useState([])
 
+    // task data fetch from product json data
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setTask(data))
     }, [])
 
+    // Event listner added for Add to list in card section
     const addToList = (activity) => {
         const newWorkOut = [...workOut, activity];
         setWorkOut(newWorkOut)
