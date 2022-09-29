@@ -4,6 +4,8 @@ import User from './User';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import Breakbtn from './Breakbtn';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Tracker = ({ workOut }) => {
     // use State for break time buttons
@@ -23,7 +25,7 @@ const Tracker = ({ workOut }) => {
     let newBreak = 0;
     const breakBtnFunction = (breakButton) => {
         newBreak = breakButton;
-        setNewBreakTime(newBreak)   
+        setNewBreakTime(newBreak)
     }
 
     // Total Exercise time added
@@ -31,6 +33,18 @@ const Tracker = ({ workOut }) => {
     for (const perWorks of workOut) {
         workTime = workTime + perWorks.timeNeed;
     }
+    // Toast Added for Activity Completion
+    const notify = () => {
+        toast.success('Todays Activity Completed!', {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+    };
 
     return (
         <div className='sticky top-20'>
@@ -40,11 +54,11 @@ const Tracker = ({ workOut }) => {
                     <h2 className="text-sm lg:text-xl">Take Some Seconds of Break</h2>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-1 bg-slate-200 rounded-lg p-4'>
                         {
-                            breakTime.map((breakButton) => (<Breakbtn 
+                            breakTime.map((breakButton) => (<Breakbtn
                                 key={breakButton.id}
                                 breakButton={breakButton}
                                 breakBtnFunction={breakBtnFunction}
-                                ></Breakbtn>))
+                            ></Breakbtn>))
                         }
                     </div>
                     <h2 className="text-sm lg:text-xl mt-2">Exercise Details</h2>
@@ -59,7 +73,7 @@ const Tracker = ({ workOut }) => {
                         </div>
                     </div>
                     <div className="mt-16 card-actions justify-center">
-                        <button
+                        <button onClick={()=>notify()}
                             className="btn btn-block rounded btn-success absolute bottom-0 text-white">
                             <div className='flex gap-2 justify-center items-center'>
                                 <FontAwesomeIcon icon={faCircleCheck} />
@@ -69,6 +83,7 @@ const Tracker = ({ workOut }) => {
                     </div>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

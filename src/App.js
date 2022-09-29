@@ -4,7 +4,9 @@ import Body from './Component/Body/Body';
 import Questions from './Component/Questions/Questions';
 import Footer from './Component/Footer/Footer';
 
+
 function App() {
+
   return (
     <div className="">
       <Navbar></Navbar>
