@@ -7,8 +7,8 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 
 const User = () => {
     return (
-        <div>
-            <div className='text-center flex flex-col md:flex-row justify-around items-center self-center'>
+        <div className='pb-0'>
+            <div className='text-center flex flex-col md:flex-row justify-around md:justify-evenly items-center'>
                 <div className="avatar ml-2 lg:ml-0">
                     <div className="w-20 rounded-full">
                         <img src="https://placeimg.com/192/192/people" />
@@ -19,7 +19,7 @@ const User = () => {
                     <p> <FontAwesomeIcon icon={faLocationPin} /> <small>Dhaka, Bangladesh</small></p>
                 </div>
             </div>
-            <div className='text-center grid grid-cols-3 my-6 mx-4 rounded-lg bg-slate-200 py-2'>
+            <div className='text-center grid grid-cols-3 my-6 mx-4 rounded-lg bg-slate-200 pt-2'>
                 <div>
                     <p>
                         <strong>75</strong>

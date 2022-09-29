@@ -1,17 +1,41 @@
 import React from 'react';
 import './Tracker.css'
 import User from './User';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 const Tracker = () => {
     return (
         <div className='fixed'>
             <div className="card w-1/10 bg-base-100 shadow-xl mr-2">
                 <User></User>
-                <div className="card-body items-center text-center">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                <div className="px-2 mt-0 relative">
+                    <h2 className="text-sm lg:text-xl">Add A Break</h2>
+                    <div className='grid grid-cols-4 gap-1 bg-slate-200 rounded-lg p-4'>
+                        <button className="btn btn-xs text-sm">10<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm">20<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm">30<small className='text-xs'>s</small></button>
+                        <button className="btn btn-xs text-sm">40<small className='text-xs'>s</small></button>
+                    </div>
+                    <h2 className="text-sm lg:text-xl mt-2">Exercies Details</h2>
+                    <div className='mt-3 mb-4'>
+                        <div className='flex justify-between bg-slate-200 p-3 rounded-lg mb-2'>
+                            <p className='block'>Work time</p>
+                            <p className='block'>200 <small>Min</small></p>
+                        </div>
+                        <div className='flex justify-between bg-slate-200 p-3 rounded-lg'>
+                            <p className='block'>Break time</p>
+                            <p className='block'>20 <small>Min</small></p>
+                        </div>
+                    </div>
+                    <div className="mt-16 card-actions justify-center">
+                        <button
+                            className="btn btn-block rounded btn-success absolute bottom-0 text-white">
+                            <div className='flex gap-2 justify-center items-center'>
+                                <FontAwesomeIcon icon={faCircleCheck} />
+                                <p>Activity Done</p>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
