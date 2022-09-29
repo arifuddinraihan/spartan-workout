@@ -8,7 +8,7 @@ const SingleCard = ({activity, setTask}) => {
     // console.log(activity.id)
     return (
         <div className="card w-1/10 bg-base-100 shadow-xl">
-            <figure><img className='h-40' src={img} alt="/" /></figure>
+            <figure><img className='w-full h-40' src={img} alt="/" /></figure>
             <div className="card-body relative px-1 lg:px-3">
                 <h2 className="card-title text-lg md:text-xl lg:text-2xl">{name}</h2>
                 <p><small className='text-xs md:text-sm lg:text-lg'>{details}</small></p>
