@@ -3,7 +3,7 @@ import './SingleCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimeline} from '@fortawesome/free-solid-svg-icons'
 
-const SingleCard = ({activity, setTask}) => {
+const SingleCard = ({activity, setTask, addToList}) => {
     const { name, forAge, timeNeed, img} = activity
     // console.log(activity.id)
     return (
@@ -14,7 +14,7 @@ const SingleCard = ({activity, setTask}) => {
                 <p><strong className='text-sm md:text-lg lg:text-xl'>For Age : {forAge}</strong></p>
                 <p><strong className='text-sm md:text-lg lg:text-xl'>Time required : <span>{timeNeed}</span>Min</strong></p>
                 <div className="card-actions justify-center mt-5">
-                    <button
+                    <button onClick={()=>(addToList(activity))}
                         className="btn btn-block rounded btn-secondary absolute bottom-0 text-white">
                         <div className='flex gap-2 justify-center items-center'>
                             <FontAwesomeIcon icon={faTimeline} />

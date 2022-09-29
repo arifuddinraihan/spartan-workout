@@ -2,7 +2,7 @@ import React from 'react';
 import './Cards.css'
 import SingleCard from './SingleCard';
 
-const Cards = ({ task, setTask }) => {
+const Cards = ({ task, setTask, addToList }) => {
 
     return (
         <div>
@@ -13,6 +13,7 @@ const Cards = ({ task, setTask }) => {
                         activity={activity}
                         setTask={setTask}
                         key={activity.id}
+                        addToList={addToList}
                     ></SingleCard>))
                 }
             </div>

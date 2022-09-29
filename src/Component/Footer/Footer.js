@@ -7,10 +7,10 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
     return (
         <div className=''>
-            <footer className="footer p-10 bg-info text-neutral-content">
-                        <a href=".\" className=" text-white text-xl md:text-4xl">
-                            <strong>Spartan <FontAwesomeIcon icon={faDumbbell} /> WorkOut</strong>
-                        </a>
+            <footer className="footer p-10 bg-info text-neutral-content container mx-auto">
+                <a href=".\" className=" text-white text-xl md:text-4xl">
+                    <strong>Spartan <FontAwesomeIcon icon={faDumbbell} /> WorkOut</strong>
+                </a>
                 <div className='text-white'>
                     <span className=" text-white text-sm md:text-xl">Social</span>
                     <div className="grid grid-flow-col gap-4">
